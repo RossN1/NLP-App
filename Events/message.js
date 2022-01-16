@@ -1,5 +1,5 @@
 const chalk = require("chalk");
-const RasaAPI = require("../Middleware/RasaAPI");
+const HaystackAPIFunction = require("../Middleware/HaystackAPI");
 
 module.exports = {
     name: 'messageCreate',
@@ -9,15 +9,7 @@ module.exports = {
         if (message.author.bot) return;
         console.log(chalk.green(`${message.author.username} -> ${message.channel.name} -> `) + chalk.white(`${message.content}`));
         text = `${message.content}`
-        userId = `${message.author.id}`
-
-        if(text.includes("API")) {
-            console.log(RasaAPI())
-        } else {
-            console.log("Don't send to API")
-        }
-        
-
-
+        userId = `${message.author.id}`  
+        HaystackAPIFunction.HaystackAPI(message)   
     }
 }

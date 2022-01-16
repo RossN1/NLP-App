@@ -12,11 +12,15 @@
   "license": "ISC",
   "dependencies": {
     "@discordjs/opus": "^0.6.0",
+    "@discordjs/voice": "^0.6.0",
     "axios": "^0.21.4",
+    "axios-time": "^1.0.0",
     "chalk": "^4.1.2",
-    "discord-speech-recognition": "^2.0.2",
     "discord.js": "^13.1.0",
     "dotenv": "^10.0.0",
-    "mongodb": "^4.1.1"
+    "libsodium-wrappers": "^0.7.9",
+    "mongodb": "^4.1.1",
+    "mongoose": "^6.1.4",
+    "pretty-ms": "^7.0.1"
   }
 }
